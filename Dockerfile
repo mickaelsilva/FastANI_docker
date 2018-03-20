@@ -12,7 +12,7 @@ RUN pwd
 RUN ls
 RUN ./bootstrap.sh
 RUN ./configure --prefix=/NGStools/
-RUN make
+RUN make install
 
 #ENV PATH="/NGStools/:${PATH}"
 #WORKDIR /NGStools/
