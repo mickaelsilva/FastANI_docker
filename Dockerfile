@@ -14,9 +14,8 @@ RUN ./bootstrap.sh
 RUN ./configure
 RUN make
 
-ENV PATH="/NGStools/"
-
+ENV PATH="/NGStools/:${PATH}"
+WORKDIR /NGStools/
 
 RUN pwd
-RUN ls
 RUN fastANI
