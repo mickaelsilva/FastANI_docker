@@ -8,9 +8,10 @@ RUN apt-get install -y git make libatlas-base-dev wget g++ build-essential
 RUN git clone https://github.com/ParBLiSS/FastANI
 
 WORKDIR /NGStools/FastANI
-
-#RUN ./bootstrap.sh
-RUN ./configure --prefix=../
+RUN pwd
+RUN ls
+RUN bootstrap.sh
+RUN configure --prefix=../
 RUN make
 
 ENV PATH="/NGStools/"
