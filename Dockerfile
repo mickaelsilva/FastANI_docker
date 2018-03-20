@@ -11,7 +11,7 @@ WORKDIR /NGStools/FastANI
 RUN pwd
 RUN ls
 RUN ./bootstrap.sh
-RUN ./configure --prefix=../
+RUN ./configure
 RUN make
 
 ENV PATH="/NGStools/"
