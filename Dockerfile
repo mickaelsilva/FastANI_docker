@@ -9,7 +9,7 @@ RUN git clone https://github.com/ParBLiSS/FastANI
 
 WORKDIR /NGStools/FastANI
 
-RUN ./bootstrap.sh
+#RUN ./bootstrap.sh
 RUN ./configure --prefix=../
 RUN make
 
