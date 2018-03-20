@@ -16,4 +16,7 @@ RUN make
 
 ENV PATH="/NGStools/"
 
-RUN which fastANI
+
+RUN pwd
+RUN ls
+RUN fastANI
