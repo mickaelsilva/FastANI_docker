@@ -4,11 +4,8 @@ WORKDIR /NGStools/
 RUN apt-get update
 RUN apt-get install -y git make libatlas-base-dev wget g++ build-essential
 
-#GET training files and Prodigal 
+#GET FastANI
 RUN git clone https://github.com/ParBLiSS/FastANI
-
-#INSTALL chewBBACA requirements 
-RUN 
 
 WORKDIR /NGStools/FastANI
 
